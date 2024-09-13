@@ -1,0 +1,3 @@
+USERNAME = "test1234567"
+PASSWORD = "Test@123456"
+BROWSER = "chrome"
