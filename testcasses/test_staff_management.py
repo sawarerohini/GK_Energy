@@ -12,11 +12,11 @@ from page_objects.staff_management import StaffManagement
 @pytest.fixture(scope="module")
 def setup():
     driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
-    driver.get('http://erp-gk.gkenergy.in/dashboard/state-management')
+    driver.get('')
     driver.maximize_window()
     login_obj = Login(driver)
     staff_obj = StaffManagement(driver)
-    login_obj.login('test1234567', 'Test@123456')  # Replace with actual credentials
+    login_obj.login('user', 'pass@23')  # Replace with actual credentials
     yield driver, staff_obj
     staff_obj.logout()
     driver.quit()
