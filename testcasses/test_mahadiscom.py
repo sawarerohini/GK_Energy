@@ -11,7 +11,7 @@ from page_objects.mahadiscom_page import ReportsPage
 @pytest.fixture(scope="module")
 def setup():
     driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
-    driver.get("https://kusumoffice.mahadiscom.in/solar/dashboard")
+    driver.get("")
     driver.maximize_window()
     yield driver
     driver.quit()
@@ -22,7 +22,7 @@ def test_hover_and_click_beneficiary_registration_link(setup):
 
     # Perform login
     print("Logging in...")
-    login_page.login("ho@mahadiscom.in", "Discom@123")
+    login_page.login("user", "pass@23")
 
     # Check if login was successful
     WebDriverWait(driver, 30).until(EC.presence_of_element_located((By.XPATH, "//div[@class='menu-toggle']")))
