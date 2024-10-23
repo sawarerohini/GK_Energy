@@ -13,7 +13,7 @@ def setup():
     driver.maximize_window()
     login_obj = Login(driver)
     inventory_obj = Inventory_Request(driver)
-    login_obj.login('test1234567', 'Test@123456')  # Replace with actual credentials
+    login_obj.login('abc12', 'pass@12')  # Replace with actual credentials
     yield driver, inventory_obj
     inventory_obj.logout()
     driver.quit()
