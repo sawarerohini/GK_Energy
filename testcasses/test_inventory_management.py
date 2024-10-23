@@ -9,7 +9,7 @@ from page_objects.inventory_management import Inventary_Management
 @pytest.fixture(scope="module")
 def setup():
     driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
-    driver.get('http://erp-gk.gkenergy.in/dashboard/state-management')
+    driver.get('')
     driver.maximize_window()
     login_obj = Login(driver)
     stat_page = Inventary_Management(driver)
