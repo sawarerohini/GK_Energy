@@ -13,7 +13,7 @@ def setup():
     driver.maximize_window()
     login_obj = Login(driver)
     stat_page = Inventary_Management(driver)
-    login_obj.login('test1234567', 'Test@123456')  # Replace with actual credentials
+    login_obj.login('user', 'pass@222')  # Replace with actual credentials
     yield driver, stat_page
     stat_page.logout()
     driver.quit()
