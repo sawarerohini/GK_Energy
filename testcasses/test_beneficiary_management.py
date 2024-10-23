@@ -12,7 +12,7 @@
 # @pytest.fixture(scope="module")
 # def setup():
 #     driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
-#     driver.get('http://erp-gk.gkenergy.in/dashboard/state-management')
+#     driver.get('')
 #     driver.maximize_window()
 #     login_obj = Login(driver)
 #     beneficiary_page = BeneficiaryManagement(driver)
