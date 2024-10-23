@@ -1,3 +1,3 @@
-USERNAME = "test1234567"
-PASSWORD = "Test@123456"
+USERNAME = "user"
+PASSWORD = "pass@32"
 BROWSER = "chrome"
