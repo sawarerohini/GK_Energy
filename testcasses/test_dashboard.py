@@ -11,7 +11,7 @@ class TestDashboard(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
         self.driver.implicitly_wait(30)
-        self.driver.get('http://erp-gk.gkenergy.in/dashboard/home')
+        self.driver.get('')
         self.login = Login(self.driver)
         self.dashboard_page = DashboardPage(self.driver)
 
