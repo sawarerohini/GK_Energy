@@ -10,11 +10,11 @@ from page_objects.warehouse_management import WarehouseManagementPage
 @pytest.fixture(scope="module")
 def setup():
     driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
-    driver.get('http://erp-gk.gkenergy.in/dashboard/state-management')
+    driver.get('')
     driver.maximize_window()
     login_obj = Login(driver)
     warehouse_page = WarehouseManagementPage(driver)
-    login_obj.login('test1234567', 'Test@123456')  # Replace with actual credentials
+    login_obj.login('user', 'pass@2123')  # Replace with actual credentials
     yield driver, warehouse_page
     warehouse_page.logout()
     driver.quit()
