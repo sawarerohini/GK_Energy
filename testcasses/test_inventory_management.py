@@ -9,11 +9,11 @@ from page_objects.inventory_management import Inventary_Management
 @pytest.fixture(scope="module")
 def setup():
     driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
-    driver.get('')
+    driver.get('http://erp-gk.gkenergy.in/login')
     driver.maximize_window()
     login_obj = Login(driver)
     stat_page = Inventary_Management(driver)
-    login_obj.login('user', 'pass@222')  # Replace with actual credentials
+    login_obj.login('ram', '12345678')  # Replace with actual credentials
     yield driver, stat_page
     stat_page.logout()
     driver.quit()
